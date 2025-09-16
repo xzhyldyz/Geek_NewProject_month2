@@ -11,17 +11,28 @@ class Person:
 
 
 class Classmate(Person):
+    def __init__(self,name, birth_date, occupation, village, higher_education="You dont have"):
+        super().__init__(name, birth_date, occupation, higher_education)
+        self.village = village
+
     def introduce(self):
-        print(f"Привет {self.name}! Довольно интересная у тебя должность: {self.occupation}.")
+        print(f"Привет {self.name}! Довольно интересная у тебя должность: {self.occupation} в {self.village}.")
 
 
 class Friend(Person):
+    def __init__(self, name, birth_date, occupation, skills, higher_education="You dont have"):
+        super().__init__(name, birth_date, occupation, higher_education)
+        self.skills = skills
+
     def introduce(self):
-        print(f"Как ты {self.name}? Кстати, у меня тоже день рождения в {self.birth_date} как и у тебя!")
+        print(f"Как ты {self.name}? Кстати, у меня тоже день рождения в {self.birth_date} как и у тебя! И да твои способности {self.skills} восхитительны!")
 
 
-shikamaru = Classmate("Shikamaru", "September 22", "Shinobi")
+shikamaru = Classmate("Shikamaru", "September 22", "Shinobi", "Деревне скрытого листа")
 shikamaru.introduce()
 
-kakashi = Friend("Kakashi", "September 15", "Shinobi")
+kakashi = Friend("Kakashi", "September 15", "Shinobi", "Mangekyō Sharingan")
 kakashi.introduce()
+
+for prsn in[shikamaru, kakashi]:
+    prsn.introduce()
