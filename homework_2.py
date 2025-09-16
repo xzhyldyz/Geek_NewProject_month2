@@ -30,9 +30,14 @@ class Friend(Person):
 
 shikamaru = Classmate("Shikamaru", "September 22", "Shinobi", "Деревне скрытого листа")
 shikamaru.introduce()
+gaara = Classmate("Gaara", "January 19", "Hokage", "Деревня скрытого в песке")
+gaara.introduce()
 
 kakashi = Friend("Kakashi", "September 15", "Shinobi", "Mangekyō Sharingan")
 kakashi.introduce()
+obito = Friend("Obito", "February 10", "Shinobi", "Mangekyō Sharingan")
+obito.introduce()
 
-for prsn in[shikamaru, kakashi]:
+
+for prsn in[shikamaru, gaara, kakashi, obito]:
     prsn.introduce()
