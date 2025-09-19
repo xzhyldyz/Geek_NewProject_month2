@@ -21,5 +21,5 @@ class CatDog(Dog, Cat):
 
 kotopes = CatDog()
 kotopes.speak()
-print(CatDog.__mro__) # methods resolution order
-print(Dog.__mro__)
+# print(CatDog.__mro__) # methods resolution order
+# print(Dog.__mro__)
