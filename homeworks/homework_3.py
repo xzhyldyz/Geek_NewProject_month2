@@ -1,6 +1,3 @@
-from homework_2 import shikamaru
-
-
 class Person:
     def __init__(self, name, birth_date, occupation, higher_education="You dont have"):
         self.name = name
