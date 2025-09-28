@@ -7,6 +7,9 @@ class Car:
     def drive_to_location(self, location):
         print(f"Car {self.model} is drinig to {location}")
 
+print(f"name of module {__name__}")
+
+if __name__ == "__main__":
 car_honda = Car("silver", "Honda")
 print(car_honda)
 
